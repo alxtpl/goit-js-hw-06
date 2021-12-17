@@ -1,14 +1,37 @@
-const catEl = document.querySelectorAll(`#categories`)
+const catEl = document.querySelector(`#categories`)
+const catElItem = document.querySelectorAll(`.item`)
 
-console.log("Number of categories:", catEl[0].childElementCount);
+console.log("Number of categories:", catEl.childElementCount);
 console.log('');
-for (let index = 0; index < catEl[0].childElementCount; index++) {
-    console.log("Category:", catEl[0].children[index].children[0].innerText);
-    console.log("Elements:", catEl[0].children[index].children[1].childElementCount);
+
+
+
+catElItem.forEach(item => {
+    console.log("Category:", item.firstElementChild.textContent);
+    console.log("Elements:", item.lastElementChild.childElementCount)
     console.log('');
 
-}
-// Увы но форичем не получилось!
+})
+
+
+
+
+// const catEl = document.querySelectorAll(`#categories`)
+
+// console.log("Number of categories:", catEl[0].childElementCount);
+// console.log(catEl);
+// console.log('');
+
+
+// for (let index = 0; index < catEl[0].childElementCount; index++) {
+//     console.log("Category:", catEl[0].children[index].children[0].innerText);
+//     console.log("Elements:", catEl[0].children[index].children[1].childElementCount);
+//     console.log('');
+
+// }
+// console.log("-------------------------------");
+// catEl.forEach(item => console.log(item))
+
 
 // Number of categories: 3
 
