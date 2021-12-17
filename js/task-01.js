@@ -13,7 +13,7 @@ catElItem.forEach(item => {
 
 })
 
-
+// Если можно комментарий по поводу реализации которая закоментированна ниже
 
 
 // const catEl = document.querySelectorAll(`#categories`)
@@ -29,8 +29,6 @@ catElItem.forEach(item => {
 //     console.log('');
 
 // }
-// console.log("-------------------------------");
-// catEl.forEach(item => console.log(item))
 
 
 // Number of categories: 3
