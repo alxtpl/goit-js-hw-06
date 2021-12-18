@@ -8,8 +8,7 @@ const ingredients = [
 ];
 const list = document.querySelector("#ingredients");
 const addLiEl = document.createElement("li");
-let newArr = [];
-newArr = ingredients.map(item => {
+let newArr = ingredients.map(item => {
     const addLiEl = document.createElement("li");
     addLiEl.textContent = item;
     return addLiEl;
