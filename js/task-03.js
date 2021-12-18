@@ -16,7 +16,7 @@ const listGalleryNode = document.querySelector('.gallery')
 const galleryAdd = () => {
     const galleryReturn = images.map((image) => {
 
-            return `<li class="img"><img src="${image.url}" alt="${image.alt}" width="1600px"></li>`
+            return `<li class="img"><img src="${image.url}" alt="${image.alt}" width="700px"></li>`
 
         })
         .join("")
@@ -30,6 +30,7 @@ const galleryAdd = () => {
     listGalleryNode.style.flexDirection = "column";
     listGalleryNode.style.flexWrap = "wrap"
     listGalleryNode.style.width = "auto";
+    listGalleryNode.style.listStyleType = "none";
 
 
 
