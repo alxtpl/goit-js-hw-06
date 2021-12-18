@@ -7,5 +7,6 @@ valueIncr.addEventListener('click', () => {
     counterValue += 1, valueNode.textContent = counterValue
 })
 valueDecr.addEventListener('click', () => {
-    counterValue -= 1, valueNode.textContent = counterValue
-})
+        counterValue -= 1, valueNode.textContent = counterValue
+    })
+    //
