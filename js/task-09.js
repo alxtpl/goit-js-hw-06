@@ -5,8 +5,10 @@ let btnNode = document.querySelector('.change-color')
 let colorNode = document.querySelector('.color')
 let bodyNode = document.querySelector('body')
 btnNode.addEventListener('click', onClickFunc);
+colorNode.textContent = getRandomHexColor()
+bodyNode.style.backgroundColor = getRandomHexColor()
 
-function onClickFunc(event) {
+function onClickFunc() {
     colorNode.textContent = getRandomHexColor()
     bodyNode.style.backgroundColor = getRandomHexColor()
 }

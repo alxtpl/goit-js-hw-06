@@ -21,7 +21,6 @@ const galleryAdd = () => {
         })
         .join("")
 
-    console.log(listGalleryNode)
 
     listGalleryNode.style.display = "flex"
     listGalleryNode.style.alignItems = "center";
